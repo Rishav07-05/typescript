@@ -1,4 +1,4 @@
-# TypeScript Practice
+# TypeScript 
 
 # Overview
 This repository contains a TypeScript practice file where I explore and experiment with various TypeScript features and concepts. The purpose is to enhance my understanding of TypeScript through hands-on practice.
