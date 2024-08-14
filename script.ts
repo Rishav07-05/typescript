@@ -172,4 +172,98 @@
 
 
 // Classes
-// 
+
+
+// example 1
+
+// class Airpod{
+//     price = 25000;
+//     image = "images/airpod";
+//     color = "White";
+
+//     playMusic(){
+//         console.log("Music Playing...");
+//     }
+
+//     switchMode(mode: string){
+//         console.log(mode);
+        
+//     }
+// }
+
+
+
+// example 2
+
+// class airConditionar{
+//     color = "White";
+//     tons = 70;
+//     company = "Voltas";
+
+//     temp = 22;
+
+//     turnOn(name:string){
+//         console.log(`Turing on ${name}...`);
+//         console.log(`${name} turned on...`);
+//     }
+
+//     raiseTemp(){
+//         console.log("Temperature raised by 1");
+//         this.temp++;
+//         console.log(this.temp);
+        
+//     }
+    
+//     decreaseTemp(){
+//         console.log("Temperature decreased by 1");
+        
+//     }
+// }
+
+// let ac1 = new airConditionar();
+// let ac2 = new airConditionar();
+// // ac1.raiseTemp();
+// // ac1.raiseTemp();
+// ac1.turnOn("ac1");
+
+
+// example 3
+
+
+// type Data = string | null;
+// class Pendrive{
+//     company = "hp";
+//     price = 1200;
+//     data: null | string = null;
+//     putData(data: Data){
+//         console.log(`putting some datat ${data}`);
+//         this.data = data;
+//     }
+//     getData(){
+//         console.log(this.data);
+        
+//     }
+// }
+
+// let Pendrive1 = new Pendrive();
+// Pendrive1.putData("12");
+// Pendrive1.getData();
+
+
+// example 4
+
+class Food{
+    price = 1233;
+    
+    eat(){
+        console.log("eating....");
+    }
+}
+
+class sweet1 extends Food{
+    name = "Gulab Jamun";
+}
+
+let sweet2 = new sweet1(); // making the instance for sweet1
+
+sweet2.eat();
