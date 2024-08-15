@@ -179,19 +179,93 @@
 // Pendrive1.putData("12");
 // Pendrive1.getData();
 // example 4
-class Food {
-    constructor() {
-        this.price = 1233;
-    }
-    eat() {
-        console.log("eating....");
-    }
-}
-class sweet1 extends Food {
-    constructor() {
-        super(...arguments);
-        this.name = "Gulab Jamun";
-    }
-}
-let sweet2 = new sweet1(); // making the instance for sweet1
-sweet2.eat();
+// class Food{
+//     price = 1233;
+//     eat(){
+//         console.log("eating....");
+//     }
+// }
+// class sweet1 extends Food{
+//     name = "Gulab Jamun";
+// }
+// let sweet2 = new sweet1(); // making the instance for sweet1
+// sweet2.eat();
+// Constructor => It's a type of special method for classes whose work is to run first and initializing all the variables
+// example 1
+// class Pendrive{
+//     public company: string;
+//     constructor(name:string){
+//         this.company = name;
+//     }
+// }
+// let p1 = new Pendrive("Sandisk");
+// let p2 = new Pendrive("hp");
+// example 2
+// class Earphone{
+//     public name: string ;
+//     public price: number;
+//     constructor(name : string , price : number){
+//         this.name = name;
+//         this.price = price;
+//     }
+// }
+// let e1 = new Earphone("Apple" , 25000);
+// let e2 = new Earphone("Samsung" , 20000);
+// example 3
+// Initializing public in the constructor itself
+// class Bottle{
+//     constructor(public shape: string){ 
+//         this.shape = shape;
+//     }
+// }
+// let el = new Bottle("Square");
+// example 4
+// class User{
+//     constructor(public name : string , public password : string , public email: string , public image: string){
+//         this.name = name;
+//         this.email = email;
+//         this.password = password;
+//         this.image = image;
+//     }
+// }
+// let el = new User("Rishav" , "@hello" , "hello@email.com" , "image/src")
+// Access Modifier => Public , Private & Protected
+//By default everything is given public
+// class Pendrive{
+//     price; // By default everytime it's public
+//     constructor(){
+//         this.price = 1230;
+//     }
+// }
+// Private => By initializing with private be can't do any changes globally and can only be used 
+// class User{
+//     private balance = 1200;
+//     getBalance(){
+//         console.log(this.balance);
+//     }
+// }
+// let ul = new User();
+// ul.balance = 120000; // It will show error as initialized as private
+// ul.balance = 12300;  // We can get the desired output and can change the private part but on the compilation time ts compiler will show error
+// Protected => can't be used outside the class or globally but can be used in the extended class 
+// class User{
+//     protected balance = 1200;
+// }
+// class Admin extends User{
+//     private isAdmin = true;
+//     getBalance(){
+//         this.balance
+//     }
+// }
+// let al = new Admin();
+//Readonly Property => mainly used for not changing the property making it to read only not write.
+// class abcd{
+//     constructor(public readonly name: string){
+//         this.name = name;
+//     }
+//     getName(){
+//         console.log(this.name);
+//     };
+// }
+// let abcd1 = new abcd("Risss")
+// getters & setters
