@@ -259,28 +259,27 @@
 // // }
 // // let al = new Admin();
 // //Readonly Property => mainly used for not changing the property making it to read only not write.
-// class abcd{
-//     constructor(public readonly name: string){
-//         this.name = name;
-//     }
-//     getName(){
-//         console.log(this.name);
-//     };
-// }
-// let abcd1 = new abcd("Risss")
-// getters & setters
-
-
-// class abcd{
-//     constructor(public username: string){
-//         this.username = username;
-//     }
-//     get name(){
-//         return this.username;
-//     }
-//     set name(value: string){
-//         this.username = value;
-//     }
-// }
-// let abcd1 = new abcd("Risss");
-// console.log(abcd1);
+// // class abcd{
+// //     constructor(public readonly name: string){
+// //         this.name = name;
+// //     }
+// //     getName(){
+// //         console.log(this.name);
+// //     };
+// // }
+// // let abcd1 = new abcd("Risss")
+// // getters & setters
+class abcd {
+    constructor(username) {
+        this.username = username;
+        this.username = username;
+    }
+    get name() {
+        return this.username;
+    }
+    set name(value) {
+        this.username = value;
+    }
+}
+let abcd1 = new abcd("Risss");
+console.log(abcd1);
